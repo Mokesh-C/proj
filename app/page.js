@@ -1,20 +1,20 @@
 
 import Image from "next/image";
-
+import './styles/home.css';
 export default function Home() {
     return (
         <main>
 
             <div>
-                <Image
+                <Image className="img"
                     src="/bg.jpg"
                     alt="Sample Image"
                     width={612}
                     height={334}
                     layout="responsive"
-                    style={{ maxWidth: '100%', maxHeight: '80vh', filter: 'blur(5px)' }}
+                    style={{ maxWidth: '100%', maxHeight: '80vh' }}
                 />
-                <h1 className="hero">Welcome to Book My Hall Website</h1>
+                <div className="hero">" Let’s Make Your Next Event <span className="hero-span">Extraordinary!</span> "</div>
             </div>
         </main >
     );
